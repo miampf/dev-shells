@@ -29,6 +29,13 @@
           shellHook = defaultCommands;
         };
 
+        devShells."go" = mkShell {
+          inherit system;
+
+          buildInputs = defaultInputs ++ [ go ];
+          shellHook = defaultCommands;
+        };
+
         devShells."rust-nightly" = mkShell {
           inherit system;
 
