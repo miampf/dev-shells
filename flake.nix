@@ -48,6 +48,16 @@
           rustup toolchain add stable
           '' + defaultCommands;
         };
+
+        devShells."rust-veilid" = mkShell {
+          inherit system;
+
+          buildInputs = defaultInputs ++ [ rustup rustc cargo capnproto ];
+
+          shellHook = ''
+          rustup toolchain add stable
+          '' + defaultCommands;
+        };
       }
     );
 }
