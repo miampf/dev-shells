@@ -56,7 +56,7 @@
           '' + defaultCommands;
         };
 
-        devShells."rust-veilid" = mkShell {
+        devShells."veilid" = mkShell {
           inherit system;
 
           buildInputs = defaultInputs ++ [ rustup rustc cargo capnproto ];
