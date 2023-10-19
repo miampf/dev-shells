@@ -12,12 +12,11 @@
         pkgs = (import nixpkgs) {
           inherit system;
         };
-        defaultInputs = [ pkgs.fish pkgs.git ];
+        defaultInputs = [ pkgs.fish pkgs.git pkgs.neovim ];
         defaultCommands = ''
         echo "Time to mix drinks and change lives!"
         fish
         '';
-
 
       in 
       with pkgs;
