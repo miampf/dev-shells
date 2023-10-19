@@ -13,7 +13,7 @@
           inherit system;
         };
         defaultInputs = [ pkgs.fish ];
-        defaultCommand = ''
+        defaultCommands = ''
         echo "Time to mix drinks and change lives!"
         fish
         '';
@@ -22,15 +22,24 @@
       in 
       with pkgs;
       {
+        devShells."rust-nightly" = mkShell {
+          inherit system;
+
+          buildInputs = defaultInputs ++ [ rustup rustc cargo ];
+
+          shellHook = ''
+          rustup toolchain add nightly
+          '' + defaultCommands;
+        };
 
         devShells."rust-stable" = mkShell {
-          inherit system defaultInputs;
+          inherit system;
           
           buildInputs = defaultInputs ++ [ rustup rustc cargo ];
 
           shellHook = ''
           rustup toolchain add stable
-          '' + defaultCommand;
+          '' + defaultCommands;
         };
       }
     );
