@@ -56,6 +56,16 @@
           '' + defaultCommands;
         };
 
+        devShells."tauri" = mkShell {
+          inherit system;
+
+          buildInputs = defaultInputs ++ [ rustup rustc cargo cargo-tauri ];
+
+          shellHook = ''
+          rustup toolchain add stable
+          '' + defaultCommands;
+        };
+
         devShells."veilid" = mkShell {
           inherit system;
 
