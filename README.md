@@ -4,7 +4,7 @@ Just some development environments/shells I wrote to learn more about nix. Could
 
 ## Using the shells
 
-Using the shells is a simple `nix develop github:miampf/dev-shells#<name>`. Different names and a description for them is provided in a table below. Also, all environments come with `git`, `neovim` and the `fish`-shell.
+Using the shells is a simple `nix develop github:miampf/dev-shells#<name>`. Different names and a description for them is provided in a table below. Also, all environments come with `git`, `spacevim` and the `fish`-shell.
 
 
 | <name>       | description                                                                          |

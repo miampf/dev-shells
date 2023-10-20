@@ -12,7 +12,7 @@
         pkgs = (import nixpkgs) {
           inherit system;
         };
-        defaultInputs = [ pkgs.fish pkgs.git pkgs.neovim ];
+        defaultInputs = [ pkgs.fish pkgs.git pkgs.spacevim ];
         defaultCommands = ''
         echo "Time to mix drinks and change lives!"
         fish
