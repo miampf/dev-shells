@@ -10,6 +10,7 @@ Using the shells is a simple `nix develop github:miampf/dev-shells#<name>`. Diff
 | <name>       | description                                                                          |
 |--------------|--------------------------------------------------------------------------------------|
 | bun          | Installs the [bun](https://bun.sh/) program to work with javascript.                 |
+| c            | Installs clang, clang++, cmake and ninja                                             |
 | go           | Installs the go runtime.                                                             |
 | rust-nightly | Installs rust with the nightly toolchain.                                            |
 | rust-stable  | Installs rust with the stable toolchain.                                             |

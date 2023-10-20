@@ -28,6 +28,13 @@
           shellHook = defaultCommands;
         };
 
+        devShells."c" = mkShell {
+          inherit system;
+
+          buildInputs = defaultInputs ++ [ clang cmake ninja ];
+          shellHook = defaultCommands;
+        };
+
         devShells."go" = mkShell {
           inherit system;
 
