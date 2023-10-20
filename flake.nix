@@ -42,6 +42,13 @@
           shellHook = defaultCommands;
         };
 
+        devShells."podman" = mkShell {
+          inherit system;
+
+          buildInputs = defaultInputs ++ [ podman ];
+          shellHook = defaultCommands;
+        };
+
         devShells."rust-nightly" = mkShell {
           inherit system;
 
