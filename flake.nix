@@ -14,7 +14,6 @@
         };
         defaultInputs = [ pkgs.fish pkgs.git pkgs.spacevim ];
         defaultCommands = ''
-        echo "Time to mix drinks and change lives!"
         fish
         '';
 
