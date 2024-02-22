@@ -88,6 +88,14 @@
           rustup toolchain add stable
           '' + defaultCommands;
         };
+
+        devShells."zig" = mkShell {
+          inherit system;
+
+          buildInputs = defaultInputs ++ [ zig ];
+
+          shellHook = defaultCommands;
+        };
       }
     );
 }

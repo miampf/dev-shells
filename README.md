@@ -17,4 +17,4 @@ Using the shells is a simple `nix develop github:miampf/dev-shells#<name>`. Diff
 | rust-stable  | Installs rust with the stable toolchain.                                             |
 | tauri        | Installs rust (stable) and cargo-tauri.                                              |
 | veilid       | Installs rust and veilid requirements needed to work to develop veilid apps in rust. |
-
+| zig          | Installs zig                                                                         |
